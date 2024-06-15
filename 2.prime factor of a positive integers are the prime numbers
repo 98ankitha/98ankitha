@@ -1,0 +1,20 @@
+#2.prime factor of a positive integers are the prime numbers that divide that integer exactly
+#m=int(input())
+#a=list(map(int,input().split()))
+num=int(input())
+def prime_fact(num):
+    factors=[]
+    fact=2
+    while(fact<num):
+        if (num%fact==0):
+            factors.append(fact)
+            num=num//fact
+        else:
+            fact+=1
+    return factors
+factors=prime_fact(6)
+s=0
+a=[11,12,13,14,15,16]
+for i in factors:
+    s=s+a[i]
+    print(s)
