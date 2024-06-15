@@ -1,0 +1,17 @@
+#1.vowel repetition problem
+d={}
+n=input()
+ans=0
+max=-999
+vowel="aeiou"
+for i in n:
+    if i in vowel:
+        if i not in d:
+            d[i]=1
+        else:
+            d[i]+=1
+        if d[i]>max:
+            max=d[i]
+            ans=i
+print(d)
+print(ans)
