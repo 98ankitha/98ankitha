@@ -1,0 +1,25 @@
+#4.the index of the equilibrium position 42312123
+#using brute method checking for each n every element
+n=input()
+a=[2,4,3,2,7]#2+4+3=9,2+7=9
+f=0
+for i in range(0,len(a)):
+    i1=i
+    j=i+1
+    s1=0
+    s2=0
+    #left side
+    while i>=0:
+        s1+=a[i]#increment the no to 4
+        i=i-1
+    #right side
+    while j<len(a):
+        s2+=a[j]
+        j=j+1
+    if s1==s2:
+        print(i1+1)
+        f=1
+        break
+if f==0:
+    print(len(a)//2)
+    
