@@ -1,0 +1,17 @@
+#6.maximize pair product
+#i/p:8
+#11 12 2 8 10 11 9 8
+#o/p:[10,8]
+'''a=list(map(int,input().split()))
+mx=-999
+sum=0
+for i in range(0,len(a)):
+    for j in range(i+1,len(a)):
+        if a[i]+a[j]==18:
+            if a[i]>a[j]:
+                p=a[i]+a[j]
+                if p>mx:
+                    mx=p
+                    k=a[i]
+                    h=a[j]
+print(mx,k,h)
