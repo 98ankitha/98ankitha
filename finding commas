@@ -1,0 +1,27 @@
+#finding commas
+#input:5000
+#output:4001
+n=int(input())
+c=1000
+k=1
+ans=1
+while c<n:
+    next=c*1000#next=1000000#1000000
+    num=min(n-c+1,next-c)#min(1009001,999000)min is 999000 so num is also 999000
+    ans=num*k#999000*1
+    c=next
+    k=k+1#2
+print(ans)#finding commas
+#input:5000
+#output:4001
+n=int(input())
+c=1000
+k=1
+ans=1
+while c<n:
+    next=c*1000#next=1000000#1000000
+    num=min(n-c+1,next-c)#min(1009001,999000)min is 999000 so num is also 999000
+    ans=num*k#999000*1
+    c=next
+    k=k+1#2
+print(ans)
