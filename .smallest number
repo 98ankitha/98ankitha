@@ -1,0 +1,14 @@
+#10.smallest number
+#i/p:50 66 23
+#o/p:smallest number is 23
+m=map(int,input().split())
+print("smallest number is",min(m))
+a=int(input())
+b=int(input())
+c=int(input())
+if a>b or c>b :
+    print(b)
+elif b>c or a>c:
+    print(c)
+elif c>a or b>a:
+    print(a)
