@@ -1,0 +1,20 @@
+#4.signature of lcm
+#i/p:two positive integers a and b(1<=a,b<=1000)
+#o/p:for gcd function,an integer representing the gcd of a and b
+    #for lcm ------------------------------------- lcm----------
+#i/p:12 18
+#o/p:6
+#8
+def gcd(a,b):
+    while b!=0:#18
+        a,b=b,a%b#18,12%18=12(1st iteration)
+    return a
+def lcm(a,b):
+    return abs(a*b)//gcd(a,b)#12*18=96 #96//6=36
+
+a=12
+b=20
+gcd1=gcd(a,b)
+lcm1=lcm(a,b)
+print(gcd1)
+print(lcm1)
