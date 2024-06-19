@@ -1,0 +1,24 @@
+#3.best grade
+#i/p:abcdefg
+#3
+#2
+#o/p:a
+s=input()
+p=int(input())
+k=int(input())
+s2=list(s)
+s=0
+e=len(s2)
+mini=999
+if abs(p-k-1)>=0:
+    s=abs(p-k-1)
+if p+k<len(s2):
+    e=p+k
+print(s,e)
+for i in range(s,e):
+    mini=min(ord(s2[i]),mini)
+store=s2[p-1]
+s2[p-1]=s2[s2.index(chr(mini))]
+s2[s2.index(chr(mini))]=store
+print(mini)
+print(' '.join(s2))
