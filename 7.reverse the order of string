@@ -1,0 +1,14 @@
+#7.reverse the order of string
+#i/p:hello world
+#o/p:world hello
+s=input()
+n=list(s)
+l=list(s)
+i=0
+j=len(l)-1
+while i<=j:
+    temp=l[i]
+    l[i]=l[j]
+    i+=1
+    j-=1
+print(' '.join(l))
