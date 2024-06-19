@@ -1,0 +1,6 @@
+#8.number of boys
+#i/p:50 45
+#o/p:the remaining no of toys=5
+a,b=input().split()
+a,b=int(a),int(b)
+print("the remaining no of toys",(a-b))
