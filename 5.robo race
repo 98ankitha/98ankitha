@@ -1,0 +1,19 @@
+5.robo race x=2,n=3,y=1,m=4 the smallest point meet at the starting point is 5sec->y=1+n=4=5
+#i/p:1 2  1 4
+#o/p:5
+x,n,y,m=map(int,input().split())
+time=max(x,y)
+while True:
+    if time>=x and (time-x)%n==0 and time>=y and (time-y)%m==0:
+        print(time)
+        break
+    time+=1'''5.robo race x=2,n=3,y=1,m=4 the smallest point meet at the starting point is 5sec->y=1+n=4=5
+#i/p:1 2  1 4
+#o/p:5
+'''x,n,y,m=map(int,input().split())
+time=max(x,y)
+while True:
+    if time>=x and (time-x)%n==0 and time>=y and (time-y)%m==0:
+        print(time)
+        break
+    time+=1
